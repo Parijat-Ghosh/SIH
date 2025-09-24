@@ -1,0 +1,97 @@
+.sos-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-gradient);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  padding: 20px;
+}
+
+.sos-card {
+  background: rgba(255,255,255,0.96);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.sos-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ef4444;
+  margin-bottom: 10px;
+}
+
+.sos-subtitle {
+  font-size: 16px;
+  color: #334155;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.sos-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.sos-btn {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sos-call {
+  background: linear-gradient(135deg, #06d6a0, #1b9aaa);
+  color: white;
+}
+
+.sos-call:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #04c38c, #188d97);
+}
+
+.sos-alert {
+  background: linear-gradient(135deg, #ef4444, #f43f5e);
+  color: white;
+}
+
+.sos-alert:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #e85d5d, #e63946);
+}
+
+.back-btn {
+  margin-top: 15px;
+  padding: 12px;
+  background: linear-gradient(135deg, rgba(112,92,246,0.12), rgba(6,182,212,0.12));
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #ddd;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
